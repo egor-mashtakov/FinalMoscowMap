@@ -2,8 +2,10 @@ body {
     margin-left: 40px;
     margin-right: 140px;
     display: flex;
+    transform: scale();
+    min-width: 320px;
     flex-direction: column;
-    width: 100%;
+    width: 150%;
 }
 
 @media (min-aspect-ratio: 8/5) {
@@ -12,6 +14,7 @@ body {
     margin-right: 40px;
     display: flex;
     flex-direction: row!important;
+    width: 100%;
 }
 
 
@@ -32,7 +35,7 @@ body {
 }
 
 img {
-    min-width: 10%;
+    aspect-ratio: auto 3/4;
 }
 path {
   cursor: pointer !important;
@@ -124,16 +127,23 @@ path {
     font-size: large;
     display: flex;
     flex-direction: column;
+    text-align: justify;
 }
 
 .hidden {
   display: none;
 }
-
 #tooltip {
   position: absolute;
   background-color: white;
   padding: 5px;
   border-radius: 5px;
   z-index: 1000;
+}
+
+
+@media (max-aspect-ratio: 8/5) {
+    #tooltip {
+        display: none;
+    }
 }
