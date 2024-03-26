@@ -3,9 +3,9 @@ body {
     margin-right: 140px;
     display: flex;
     transform: scale();
-    min-width: 320px;
+    min-width: 480px;
     flex-direction: column;
-    width: 150%;
+    width: 130%;
 }
 
 @media (min-aspect-ratio: 8/5) {
